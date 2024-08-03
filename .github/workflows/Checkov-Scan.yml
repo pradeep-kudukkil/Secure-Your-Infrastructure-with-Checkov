@@ -21,7 +21,4 @@ jobs:
       run: pip install checkov
 
     - name: Run Checkov
-      run: ls
-
-    - name: Run Checkov
       run: checkov -d .
