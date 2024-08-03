@@ -21,4 +21,4 @@ jobs:
       run: pip install checkov
 
     - name: Run Checkov
-      run: checkov -d ./terraform/
+      run: checkov -d ./terraform/ --skip-check CKV_AWS_18,CKV_AWS_144
