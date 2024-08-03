@@ -2,6 +2,9 @@ name: Checkov Scan
 
 on: [workflow_dispatch]
 
+permissions:
+  contents: read
+
 jobs:
   checkov:
     runs-on: ubuntu-latest
